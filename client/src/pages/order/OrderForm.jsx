@@ -13,7 +13,7 @@ import polyestergreen from "../../assets/fabricPreviews/polyester_green.jpg";
 
 import unitexImg from "../../assets/unitex.jpg";
 import terrotImg from "../../assets/terrot1.png";
-import mayerImg from "../../assets/mayer.jpg";
+import mayerImg from "../../assets/Mayer.jpg";
 
 const { VITE_API_URL } = import.meta.env;
 
