@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contactback {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom right, #121212, #1e1e1e);
+    padding: 60px 30px;
+    min-height: 100vh;
+    gap: 40px;
+}
+
+/* Left column: contact info */
+.cont {
+    flex: 1 1 400px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ff6b00;
+    margin-bottom: 30px;
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.add {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffb347;
+    margin-top: 18px;
+    margin-bottom: 4px;
+}
+
+.addc, .addp {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Right column: map */
+.map {
+    flex: 1 1 500px;
+    border: none;
+    border-radius: 18px;
+    min-height: 400px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    animation: fadeInRight 1s ease-in-out;
+    
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contactback {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .map {
+        width: 100%;
+        min-height: 300px;
+        padding: 40px ;;
+    }
+
+    .cont {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: center;
+    }
+}
